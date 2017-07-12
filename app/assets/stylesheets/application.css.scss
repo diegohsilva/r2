@@ -12,4 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= agency
+ *= agency.min
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
