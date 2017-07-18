@@ -1,0 +1,23 @@
+<%= simple_form_for(@post) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :title %>
+
+    <%= f.input :description, input_html: { cols: 50, rows: 10 } %>
+
+    <%= f.input :url_image %>
+
+    <%= f.input :size_image %>
+
+     <%= f.input :key_youtube, placeholder: 'https://www.youtube.com/watch?v=' %>
+
+    <%= f.input :size_video %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class:'btn btn-success' %>
+  </div>
+<% end %>

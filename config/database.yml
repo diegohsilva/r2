@@ -5,11 +5,11 @@ development:
   database: r2
   pool: 5
   username: postgres
-  password: 120188
+  password: diegoh6
 test:
   adapter: postgresql
   encoding: unicode
   database: r2
   pool: 5
   username: postgres
-  password: 120188
+  password: diegoh6
