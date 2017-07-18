@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
-        	<%= link_to destroy_user_session_path, :class => "page-scroll", :data => { :confirm => 'Deseja realmenta fazer logoff' }, :method => :get, :tabindex => "-1" do %>
+        	<%= link_to destroy_user_session_path, :class => "page-scroll", :data => { :confirm => 'Deseja realmenta fazer logoff' }, :method => :delete, :tabindex => "-1" do %>
 						logoff
 			    <% end %>												    					
         </li>
