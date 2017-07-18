@@ -11,6 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.min
+//= require contact_me
+//= require jqBootstrapValidation
+//= require agency.min
+//= require agency
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
