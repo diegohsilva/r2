@@ -1,0 +1,15 @@
+pt-BR:
+  title:
+  activerecord:
+    models:
+      post:
+        one: "Post"
+        many: "Posts"
+    attributes:
+      post:
+        title: "Título"
+        description: 'Descrição'
+        url_image: 'URL Imagem'
+        size_image: 'Tamanho da imagem'        
+        size_video: 'Tamanho janela video'
+        key_youtube: 'Chave do youtube'
