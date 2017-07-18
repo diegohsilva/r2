@@ -1,3 +1,10 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: r2
+  pool: 5
+  username: postgres
+  password: 120188
 
 development:
   adapter: postgresql
@@ -13,3 +20,4 @@ test:
   pool: 5
   username: postgres
   password: 120188
+  
