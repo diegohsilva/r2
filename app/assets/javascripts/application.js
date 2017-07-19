@@ -11,9 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery_ujs
+//= require turbolinks
 //= require jquery.min
+//= require bootstrap.min
 //= require_tree .
 
-$(document).ready(function() {
-  $("#MyModal").modal();
-});
+
