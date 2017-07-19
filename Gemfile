@@ -35,3 +35,6 @@ gem 'devise'
 gem 'has_scope'
 gem 'magnific-popup-rails', '~> 1.1.0'
 gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
+
+gem 'rails_12factor', group: :production
+
