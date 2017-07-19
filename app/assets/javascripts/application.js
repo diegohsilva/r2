@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= grayscale.min
-//= grayscale
-//= jquery
-//= bootstrap.min
+//= require jquery
+//= require bootstrap.min
 //= require_tree .
