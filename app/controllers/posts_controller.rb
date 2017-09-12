@@ -12,11 +12,13 @@ class PostsController < ApplicationController
     end
 
     def new
+      @post.user_id = current_user.id      
       @post = Post.new
       respond_with(@post)
     end
 
     def edit
+      @post.user_id = current_user.id            
     end
 
     def create
@@ -42,6 +44,6 @@ class PostsController < ApplicationController
       end
 
       def post_params
-        params.require(:post).permit(:title, :description, :url_image, :size_image, :key_youtube, :size_video)
+        params.require(:post).permit(:title, :description, :url_image, :size_image, :key_youtube, :size_video, :user_id)
       end
 end

@@ -5,21 +5,23 @@
 				<% unless  @posts.nil? || @posts.empty?  %>
 					<% @posts.each do |p|%>
 					<tr>
-						<td class= "text-center">
+						<td>
 							<h1 class="text-center"><%= p.title %></h1>
 							<i><h5 class="text-center"><%= l p.created_at, format: :long %></h5></i>
 							<p class="text-justify">	
 									<%= simple_format(p.description)  %>								
 							</p>
-							<small class="text-center">
-								<i> publicado por <%= current_user %></i>
+							<small>
+								<i> publicado por <%= p.user %></i>
 							</small>													
 						</td>	
 					</tr>
 					<tr>
 						<td>
-							<%= image_tag  "#{ p.url_image}", :width => "#{p.size_image}%" %><br>
-							<% if p.url_image.blank? %>
+							<% unless p.url_image.blank? %>
+								<%= image_tag  "#{ p.url_image}", :width => "#{p.size_image}%" %><br>							
+							<% end %>
+							<% unless p.key_youtube.blank? %>							
 								<iframe width="100%" height="400"
 									src=<%="https://www.youtube.com/embed/#{p.key_youtube}"%>>
 								</iframe>
