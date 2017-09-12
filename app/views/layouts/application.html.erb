@@ -49,7 +49,8 @@
 		<%= render 'layouts/footer'%>
 	<% else %>
 	<%= render 'layouts/menu'%>													  
-		<div class="container">
+		<%= render 'layouts/messages'%>			
+		<div class="container">			
 			<%= yield %>	
    	</div>	   	    	
 	<% end %>

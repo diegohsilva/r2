@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :teams
   resources :posts
+
   devise_for :users
   get 'dashboard/index'
   root "dashboard#index"

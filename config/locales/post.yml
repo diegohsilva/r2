@@ -10,6 +10,6 @@ pt-BR:
         title: "Título"
         description: 'Descrição'
         url_image: 'URL Imagem'
-        size_image: 'Tamanho da imagem'        
-        size_video: 'Tamanho janela video'
-        key_youtube: 'Chave do youtube'
+        size_image: 'Tamanho da Imagem'        
+        size_video: 'Tamanho Janela Video'
+        key_youtube: 'Chave do Youtube'
