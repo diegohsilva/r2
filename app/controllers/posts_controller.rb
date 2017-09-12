@@ -12,8 +12,8 @@ class PostsController < ApplicationController
     end
 
     def new
-      @post.user_id = current_user.id      
       @post = Post.new
+      @post.user_id = current_user.id            
       respond_with(@post)
     end
 
